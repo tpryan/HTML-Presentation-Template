@@ -3,8 +3,34 @@
     <head>
         <title>Presentation Template</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- <link href="css/impress-demo.css" rel="stylesheet" /> -->
+        <link href="css/overrides.css" rel="stylesheet" />
     </head>
     <body>
+    	<div id="impress">
+    		<div id="title" class="step slide title" data-x="-1200" data-y="-1500">
+    			<h1>Title of <strong>Presentation</strong></h1>
+		        
+		        <div id="about">
+		        <p>Terry Ryan</p>
+		        <p>Developer Evangelist</p>
+		        <p>Twitter: <strong>@tpryan</strong></p>
+		    	</div>
+		    </div>
+
+		    <div class="step slide" data-x="0" data-y="-1500">
+		        <q>Don't you think that presentations given <strong>in modern browsers</strong> shouldn't <strong>copy the limits</strong> of 'classic' slide decks?</q>
+		    </div>
+
+		    <div class="step slide" data-x="1200" data-y="-1500">
+		        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+		    </div>
+
+
+		</div>
+		<script src="js/impress.js"></script>
+		<script>impress().init();</script>
+
 
     </body>
 </html>

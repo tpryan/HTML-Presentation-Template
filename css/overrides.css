@@ -1,0 +1,336 @@
+/* 
+    We start with a good ol' reset.
+    That's the one by Eric Meyer http://meyerweb.com/eric/tools/css/reset/ 
+    
+    You can probably argue if it is needed here, or not, but for sure it
+    doesn't do any harm and gives us a fresh start.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1{
+    font-family: 'TradeGothicLTStdCnBold';
+}
+
+body {
+    min-height: 740px;
+    
+    background: rgb(215, 215, 215);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));    
+}
+
+
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0.3;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1 }
+
+
+
+.slide {
+    display: block;
+
+    width: 900px;
+    height: 700px;
+    padding: 40px 60px;
+
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+
+    color: rgb(102, 102, 102);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+    font-family: 'SabonLTStdRegular';
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -1px;
+
+
+}
+
+#title{
+    background: #000000; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #000000 0%, #222222 50%, #333333 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#000000), color-stop(50%,#222222), color-stop(100%,#333333)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #000000 0%,#222222 50%,#333333 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #000000 0%,#222222 50%,#333333 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #000000 0%,#222222 50%,#333333 100%); /* IE10+ */
+    background: radial-gradient(center, ellipse cover,  #000000 0%,#222222 50%,#333333 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#333333',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    font-family: 'TradeGothicLTStdCnRegular ';
+    color: #FF0000;
+}
+
+#title h1{
+    margin-top: 300px;
+    margin-bottom: 100px;
+    font-size: 80px;
+}
+
+#title strong{
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'TradeGothicLTStdBoldItalic';
+    src: url('./fonts/tradegothicltstd-bd2obl-webfont.eot');
+    src: url('./fonts/tradegothicltstd-bd2obl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/tradegothicltstd-bd2obl-webfont.woff') format('woff'),
+         url('./fonts/tradegothicltstd-bd2obl-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'TradeGothicLTStdCnBold';
+    src: url('./fonts/tradegothicltstd-bdcn20-webfont.eot');
+    src: url('./fonts/tradegothicltstd-bdcn20-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/tradegothicltstd-bdcn20-webfont.woff') format('woff'),
+         url('./fonts/tradegothicltstd-bdcn20-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TradeGothicLTStdCnBoldItalic';
+    src: url('./fonts/tradegothicltstd-bdcn20obl-webfont.eot');
+    src: url('./fonts/tradegothicltstd-bdcn20obl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/tradegothicltstd-bdcn20obl-webfont.woff') format('woff'),
+         url('./fonts/tradegothicltstd-bdcn20obl-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TradeGothicLTStdBoldRegular';
+    src: url('./fonts/tradegothicltstd-bold-webfont.eot');
+    src: url('./fonts/tradegothicltstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/tradegothicltstd-bold-webfont.woff') format('woff'),
+         url('./fonts/tradegothicltstd-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TradeGothicLTStdExtendedBold';
+    src: url('./fonts/tradegothicltstd-boldext-webfont.eot');
+    src: url('./fonts/tradegothicltstd-boldext-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/tradegothicltstd-boldext-webfont.woff') format('woff'),
+         url('./fonts/tradegothicltstd-boldext-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TradeGothicLTStdBoldItalic';
+    src: url('./fonts/tradegothicltstd-boldobl-webfont.eot');
+    src: url('./fonts/tradegothicltstd-boldobl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/tradegothicltstd-boldobl-webfont.woff') format('woff'),
+         url('./fonts/tradegothicltstd-boldobl-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TradeGothicLTStdCnRegular';
+    src: url('./fonts/tradegothicltstd-cn18-webfont.eot');
+    src: url('./fonts/tradegothicltstd-cn18-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/tradegothicltstd-cn18-webfont.woff') format('woff'),
+         url('./fonts/tradegothicltstd-cn18-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TradeGothicLTStdCnItalic';
+    src: url('./fonts/tradegothicltstd-cn18obl-webfont.eot');
+    src: url('./fonts/tradegothicltstd-cn18obl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/tradegothicltstd-cn18obl-webfont.woff') format('woff'),
+         url('./fonts/tradegothicltstd-cn18obl-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TradeGothicLTStdLightRegular';
+    src: url('./fonts/tradegothicltstd-light-webfont.eot');
+    src: url('./fonts/tradegothicltstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/tradegothicltstd-light-webfont.woff') format('woff'),
+         url('./fonts/tradegothicltstd-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TradeGothicLTStdExtendedRg';
+    src: url('./fonts/tradegothicltstd-extended-webfont.eot');
+    src: url('./fonts/tradegothicltstd-extended-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/tradegothicltstd-extended-webfont.woff') format('woff'),
+         url('./fonts/tradegothicltstd-extended-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TradeGothicLTStdLightItalic';
+    src: url('./fonts/tradegothicltstd-lightobl-webfont.eot');
+    src: url('./fonts/tradegothicltstd-lightobl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/tradegothicltstd-lightobl-webfont.woff') format('woff'),
+         url('./fonts/tradegothicltstd-lightobl-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TradeGothicLTStdItalic';
+    src: url('./fonts/tradegothicltstd-obl-webfont.eot');
+    src: url('./fonts/tradegothicltstd-obl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/tradegothicltstd-obl-webfont.woff') format('woff'),
+         url('./fonts/tradegothicltstd-obl-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TradeGothicLTStdRegular';
+    src: url('./fonts/tradegothicltstd-webfont.eot');
+    src: url('./fonts/tradegothicltstd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/tradegothicltstd-webfont.woff') format('woff'),
+         url('./fonts/tradegothicltstd-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SabonLTStdBold';
+    src: url('./fonts/sabonltstd-bold-webfont.eot');
+    src: url('./fonts/sabonltstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/sabonltstd-bold-webfont.woff') format('woff'),
+         url('./fonts/sabonltstd-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SabonLTStdBoldItalic';
+    src: url('./fonts/sabonltstd-bolditalic-webfont.eot');
+    src: url('./fonts/sabonltstd-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/sabonltstd-bolditalic-webfont.woff') format('woff'),
+         url('./fonts/sabonltstd-bolditalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SabonLTStdItalic';
+    src: url('./fonts/sabonltstd-italic-webfont.eot');
+    src: url('./fonts/sabonltstd-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/sabonltstd-italic-webfont.woff') format('woff'),
+         url('./fonts/sabonltstd-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SabonLTStdRegular';
+    src: url('./fonts/sabonltstd-roman-webfont.eot');
+    src: url('./fonts/sabonltstd-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/sabonltstd-roman-webfont.woff') format('woff'),
+         url('./fonts/sabonltstd-roman-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
