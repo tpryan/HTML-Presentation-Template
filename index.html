@@ -5,6 +5,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <!-- <link href="css/impress-demo.css" rel="stylesheet" /> -->
         <link href="css/overrides.css" rel="stylesheet" />
+        <link href="css/prettify.css" rel="stylesheet" />
+        <script src="js/prettify.js"></script>
     </head>
     <body>
     	<div id="impress">
@@ -77,8 +79,21 @@
 		    	<p><a href="http://d2wc.dev" target="_new">Query site</a></p>
 		    	<footer>
 		    		<h2>Secondary Header</h2>
-		    		
+
 		    	</footer>
+		    </div>
+
+		    <div class="step slide" data-x="7000" data-y="8000" data-rotate="90">
+		    	<header>
+		    		<h1>Code Sample</h1>
+		    	</header>
+<pre class="prettyprint linenums"><code>p { color: pink }
+b { color: blue }
+u { color: "umber" }
+p { color: pink }
+b { color: blue }
+u { color: "umber" }
+</code></pre>	
 		    </div>
 
 		    <div id="last" class="step slide" data-x="-6000" data-y="0" data-z="-100" data-rotate-x="-180" data-rotate-y="180" data-scale="5">
@@ -94,8 +109,12 @@
 		    </div>
 
 		</div>
+
 		<script src="js/impress.js"></script>
-		<script>impress().init();</script>
+		<script>
+			impress().init();
+			prettyPrint();
+		</script>
 
 
     </body>

@@ -300,7 +300,12 @@ a:focus {
     padding-bottom: 40px;        
 }
 
-
+#last:before{
+    content: url(adobe_logo.png);
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
 
 @font-face {
     font-family: 'TradeGothicLTStdBoldItalic';
