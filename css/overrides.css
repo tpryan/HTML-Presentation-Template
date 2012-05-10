@@ -307,6 +307,11 @@ a:focus {
     right: 20px;
 }
 
+code{
+    font-family: Inconsolata-dz;
+    font-size: 24px;
+}
+
 @font-face {
     font-family: 'TradeGothicLTStdBoldItalic';
     src: url('./fonts/tradegothicltstd-bd2obl-webfont.eot');
@@ -492,3 +497,13 @@ a:focus {
     font-style: normal;
 
 }
+@font-face {
+font-family: 'Inconsolata-dz';
+    src: url('./fonts/inconsolata-dz.eot');
+    src: url('./fonts/inconsolata-dz.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/inconsolata-dz.woff') format('woff'),
+         url('./fonts/inconsolata-dz.ttf') format('truetype'),
+         url('./fonts/inconsolata-dz.svg#inconsolata-dz') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}    
